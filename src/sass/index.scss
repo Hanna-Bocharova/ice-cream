@@ -5,6 +5,11 @@
 @import './utils/variables';
 @import './utils/visually-hidden';
 
+@import './components/modal-btn';
+@import './components/backdrop';
+@import './components/modal-window';
+@import './components/modal-form';
+
 @import './layout/header-hero';
 @import './layout/products';
 @import './layout/about';
@@ -16,6 +21,4 @@
 @import './layout/reviews-gallery';
 
 
-@import './components/_modal_form';
-@import './components/_modal-window';
-@import './components/_backdrop';
+
