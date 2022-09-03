@@ -1,4 +1,91 @@
-.contacts-list__thumb {
+.contacts {
+  background-color: var(--bg-color);
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contacts-list__item {
   padding: 40px 32px;
-  background-color: aqua;
+  background-color: #fcfcfc;
+  border-radius: 24px;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+}
+
+// .contacts-list__thumb {
+//   padding: 40px 32px;
+// }
+
+.wrapper {
+  margin-bottom: 48px;
+  position: relative;
+}
+.wrapper::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 1px;
+  bottom: -24px;
+  background-color: #e1e1e1;
+}
+
+.contacts-list__subunit {
+  display: flex;
+  margin-bottom: 20px;
+  width: 80px;
+  height: 16px;
+  font-weight: var(--primary-font-weight);
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  line-height: 1.83;
+  letter-spacing: 0.04em;
+  background-color: var(--first-yellow);
+  border-radius: 4px;
+}
+
+.contacts-list__subunit-foodtruck {
+  width: 130px;
+}
+
+.contacts-list__info {
+  margin-bottom: 8px;
+}
+
+.contacts-list__text {
+  font-size: 12px;
+  font-weight: var(--primary-font-weight);
+  line-height: 1.83;
+  letter-spacing: 0.04em;
+  color: var(--secondary-black);
+}
+
+.contacts-list__link {
+  display: block;
+  font-size: 12px;
+  font-weight: var(--primary-font-weight);
+  line-height: 1.83;
+  letter-spacing: 0.04em;
+  color: var(--orange);
+}
+.contacts-list__link:hover,
+.contacts-list__link :focus {
+  text-decoration: underline;
+}
+
+.contacts-list__text-time {
+  font-size: 12px;
+  font-weight: var(--primary-font-weight);
+  line-height: 1.83;
+  letter-spacing: 0.04em;
+  color: var(--grey);
+}
+.contacts-info-list__link {
+  font-size: 12px;
+  font-weight: var(--primary-font-weight);
+  line-height: 1.5;
+  color: var(--primary-black);
 }
