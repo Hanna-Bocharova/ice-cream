@@ -51,30 +51,11 @@
         border-radius: 25px;
         background-image: url();
 
-        @media screen and (min-device-pixel-ratio: 2) and (max-width: 480px), 
-            (min-resolution: 2dppx) and (max-width: 480px), 
-            (min-resolution: 192dpi) and (max-width: 480px) {
-                background-image: url();
-        }
-
-        @media screen and (min-width: 768px) {
-            background-image: url();
-
-            @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-                (min-resolution: 2dppx) and (min-width: 768px),
-                (min-resolution: 192dpi) and (min-width: 768px) {
-                    background-image: url();
-                }
-        }
-
-        @media screen and (min-width: 1200px) {
-            background-image: url();
-
-            @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
-                (min-resolution: 2dppx) and (min-width: 1200px),
-                (min-resolution: 192dpi) and (min-width: 1200px) {
-                    background-image: url();
-                }
+        @media screen and (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url('');
         }
     }
 
@@ -93,30 +74,11 @@
         border-radius: 25px;
         background-image: url("");
 
-        @media screen and (min-device-pixel-ratio: 2) and (max-width: 480px),
-        (min-resolution: 2dppx) and (max-width: 480px),
-        (min-resolution: 192dpi) and (max-width: 480px) {
-            background-image: url();
-        }
-    
-        @media screen and (min-width: 768px) {
-            background-image: url();
-    
-            @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-            (min-resolution: 2dppx) and (min-width: 768px),
-            (min-resolution: 192dpi) and (min-width: 768px) {
-                background-image: url();
-            }
-        }
-    
-        @media screen and (min-width: 1200px) {
-            background-image: url();
-    
-            @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
-            (min-resolution: 2dppx) and (min-width: 1200px),
-            (min-resolution: 192dpi) and (min-width: 1200px) {
-                background-image: url();
-            }
+        @media screen and (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url('');
         }
     }
 
@@ -135,30 +97,11 @@
         background-image: url("");
         border-radius: 25px;
 
-        @media screen and (min-device-pixel-ratio: 2) and (max-width: 480px),
-        (min-resolution: 2dppx) and (max-width: 480px),
-        (min-resolution: 192dpi) and (max-width: 480px) {
-            background-image: url();
-        }
-    
-        @media screen and (min-width: 768px) {
-            background-image: url();
-    
-            @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-            (min-resolution: 2dppx) and (min-width: 768px),
-            (min-resolution: 192dpi) and (min-width: 768px) {
-                background-image: url();
-            }
-        }
-    
-        @media screen and (min-width: 1200px) {
-            background-image: url();
-    
-            @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
-            (min-resolution: 2dppx) and (min-width: 1200px),
-            (min-resolution: 192dpi) and (min-width: 1200px) {
-                background-image: url();
-            }
+        @media screen and (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url('');
         }
     }
 
