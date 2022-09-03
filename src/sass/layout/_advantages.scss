@@ -1,5 +1,5 @@
 .advantages {
-    background-color: #84A178;
+    background-color: var(--bg-color);
 
     text-align: center;
     padding-top: 21px;
@@ -66,7 +66,7 @@
         display: inline-block;
         width: 50px;
         height: 50px;
-        background: #F8D24E;
+        background: var(--first-yellow);
         border-radius: 25px;
 
         @media screen and (min-width: 768px) {
@@ -91,13 +91,13 @@
         width: 36px;
         height: 36px;
         border-radius: 25px;
-        background-image: url('../images/project/cow-1.png');
+        background-image: url('../images/cow 1.png');
 
         @media screen and (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: url('../images/project/cow-2x.png');
+            background-image: url('../images/cow 1-2x.png');
         }
     }
 
@@ -114,13 +114,13 @@
         width: 36px;
         height: 36px;
         border-radius: 25px;
-        background-image: url('../images/project/weight-1.png');
+        background-image: url('../images/weight-1.png');
 
         @media screen and (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: url('../images/project/weight-1-2x.png');
+            background-image: url('../images/weight-1-2x.png');
 
         }
     }
@@ -137,14 +137,14 @@
         display: inline-block;
         width: 36px;
         height: 36px;
-        background-image: url('../images/project/ice-cream-1.png');
+        background-image: url('../images/ice-cream-1.png');
         border-radius: 25px;
 
         @media screen and (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: url('../images/project/ice-cream-1-2x.png');
+            background-image: url('../images/ice-cream-1-2x.png');
         }
     }
 
@@ -162,7 +162,7 @@
         letter-spacing: 0.04em;
         text-transform: uppercase;
 
-        color: #FCFCFC;
+        color: var(--primary-text-color);
 
         @media screen and (min-width: 768px) {
             margin-bottom: 16px;
@@ -178,7 +178,7 @@
 
 
     &__text {
-        font-family: 'Montserrat';
+        font-family: var(--primary-font);
         font-style: normal;
         font-weight: 700;
         font-size: 12px;
@@ -196,7 +196,7 @@
         }
 
         @media screen and (min-width: 1200px) {
-            font-size: 16px;
+            font-size: var(--primary-font-size);
             line-height: 1.75;
             letter-spacing: 0.02em;
         }

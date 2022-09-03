@@ -1,5 +1,5 @@
 .about {
-    background-color: #84A178;
+    background-color: var(--bg-color);
 
     padding-top: 60px;
     padding-bottom: 21px;
@@ -18,7 +18,7 @@
     &__label {
         margin-bottom: 12px;
 
-        font-family: 'Montserrat';
+        font-family: var(--primary-font);
         font-style: normal;
         font-weight: 700;
         font-size: 18px;
@@ -27,7 +27,7 @@
 
         text-transform: uppercase;
 
-        color: #FCFCFC;
+        color: var(--primary-text-color);
 
         @media screen and (min-width: 768px) {
             font-weight: 800;
@@ -47,7 +47,7 @@
     &__title {
         margin-bottom: 32px;
 
-        font-family: 'Seymour One';
+        font-family: var(--secondary-font);
         font-style: normal;
         font-weight: 400;
         font-size: 30px;
@@ -57,7 +57,7 @@
         letter-spacing: 0.04em;
         text-transform: uppercase;
 
-        color: #FCFCFC;
+        color: var(--primary-text-color);
 
         @media screen and (min-width: 768px) {
             margin-bottom: 40px;
@@ -169,7 +169,7 @@
 
     &__text {
 
-        font-family: 'Montserrat';
+        font-family: var(--primary-font);
         font-style: normal;
         font-weight: 400;
         font-size: 12px;
@@ -178,14 +178,14 @@
         text-align: center;
         letter-spacing: 0.04em;
 
-        color: #FCFCFC;
+        color: var(--primary-text-color);
 
         @media screen and (min-width: 768px) {
             text-align: left;
         }
 
         @media screen and (min-width: 1200px) {
-            font-size: 16px;
+            font-size: var(--primary-font-size);
         }
     }
 
@@ -211,7 +211,7 @@
         }
 
         @media screen and (min-width: 1200px) {
-            font-size: 16px;
+            font-size: var(--primary-font-size);
             line-height: 1.92;
         }
     }
@@ -246,7 +246,7 @@
         min-width: 164px;
         cursor: pointer;
 
-        font-family: 'Montserrat';
+        font-family: var(--primary-font);
         font-style: normal;
         font-weight: 600;
         font-size: 14px;
@@ -254,7 +254,7 @@
         align-items: center;
         text-align: center;
 
-        color: #000000;
+        color: var(--secondary-black);
 
         @media screen and (min-width: 768px) {
             margin-left: 0;
