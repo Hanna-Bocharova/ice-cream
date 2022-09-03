@@ -2,7 +2,18 @@
     background-color: #84A178;
 
     text-align: center;
+    padding-top: 21px;
     padding-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 53px;
+        padding-bottom: 204px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 44.5px;
+        padding-bottom: 180px;
+    }
 
     &__title {
         display: none;
@@ -17,11 +28,34 @@
         gap: 28px;
         margin-left: auto;
         margin-right: auto;
+
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+            justify-content: center;
+            gap: 80px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            justify-content: space-between;
+            gap: 0;
+        }
     }
 
 
     &__item {
-        width: 230px;
+
+
+        @media screen and (max-width: 767px) {
+            min-width: 230px;
+        }
+
+        @media screen and (min-width: 768px) {
+            width: 152px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 368px;
+        }
     }
 
 
@@ -34,6 +68,14 @@
         height: 50px;
         background: #F8D24E;
         border-radius: 25px;
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 32px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 40px;
+        }
     }
 
 
@@ -49,13 +91,13 @@
         width: 36px;
         height: 36px;
         border-radius: 25px;
-        background-image: url();
+        background-image: url('../images/project/cow-1.png');
 
         @media screen and (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: url('');
+            background-image: url('../images/project/cow-2x.png');
         }
     }
 
@@ -72,13 +114,14 @@
         width: 36px;
         height: 36px;
         border-radius: 25px;
-        background-image: url("");
+        background-image: url('../images/project/weight-1.png');
 
         @media screen and (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: url('');
+            background-image: url('../images/project/weight-1-2x.png');
+
         }
     }
 
@@ -94,14 +137,14 @@
         display: inline-block;
         width: 36px;
         height: 36px;
-        background-image: url("");
+        background-image: url('../images/project/ice-cream-1.png');
         border-radius: 25px;
 
         @media screen and (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: url('');
+            background-image: url('../images/project/ice-cream-1-2x.png');
         }
     }
 
@@ -113,13 +156,24 @@
         font-style: normal;
         font-weight: 700;
         font-size: 36px;
-        line-height: 42px;
+        line-height: 1.16;
 
         text-align: center;
         letter-spacing: 0.04em;
         text-transform: uppercase;
 
         color: #FCFCFC;
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 16px;
+
+            font-size: 48px;
+            line-height: 1.22;
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 58px;
+        }
     }
 
 
@@ -128,10 +182,23 @@
         font-style: normal;
         font-weight: 700;
         font-size: 12px;
-        line-height: 170%;
+        line-height: 1.66;
+        word-wrap: break-word;
 
         text-align: center;
 
         color: #FCFCFC;
+
+        @media screen and (min-width: 768px) {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.71;
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 16px;
+            line-height: 1.75;
+            letter-spacing: 0.02em;
+        }
     }
 }
