@@ -1,0 +1,90 @@
+.hero {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #84a278;
+
+  // background-image: url(../images/mob-bg-ice-cream.png);
+
+  // padding-top: 118px;
+  // padding-bottom: 118px;
+  margin: 0 auto;
+
+  // text-align: center;
+
+  &-name {
+    // font-weight: 900;
+    // font-size: 26px;
+    // line-height: 1.61;
+    // text-align: center;
+    // letter-spacing: 0.06em;
+
+    // margin-left: auto;
+    // margin-right: auto;
+    // margin-bottom: 30px;
+
+    // text-transform: uppercase;
+    // color: var(--primery-white-color);
+  }
+}
+
+// @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+//   screen and (min-resolution: 192dpi) and (max-width: 767px),
+//   screen and (max-resolution: 2dppx) and (min-width: 767px) {
+//   .hero {
+//     background-image: url(../images/mob-points.png), url(../images/mob-ice-cream-smile-2x.png);
+//   }
+// }
+
+@media screen and (min-width: 768px) {
+  .hero {
+    // background-image: url(../images/tab-bg-ice-cream.png);
+    max-width: 1199px;
+  }
+
+  .hero-name {
+    width: 360px;
+  }
+}
+
+// @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+//   screen and (min-resolution: 192dpi) and (min-width: 768px),
+//   screen and (min-resolution: 2dppx) and (min-width: 768px) {
+//   .hero {
+//     background-image: url(../images/tab-desc-points-2x.png), url(../images/tab-ice-cream-gr-2x.png);
+//   }
+// }
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    // background-image: url(../images/desc-bg-ice-cream.png) bottom right;
+    // background-image: url(../images/desc-hero-plate.png), url(../images/desc-ice-cream-smile.png),
+    //   url(../images/desc-desc-points.png);
+
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+
+    &-name {
+      font-size: 44px;
+      line-height: 1.36;
+
+      width: 696px;
+    }
+  }
+
+  .abzac {
+    width: 200px;
+    height: 112px;
+  }
+}
+
+// @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+//   screen and (min-resolution: 192dpi) and (min-width: 1200px),
+//   screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+//   .hero {
+//     background-image: url(../images/desc-bg-full-2x.png);
+//     // background-image: url(../images/desc-desc-points-2x.png),
+//     //   url(../images/desc-ice-cream-smile-2x.png);
+//   }
+// }
