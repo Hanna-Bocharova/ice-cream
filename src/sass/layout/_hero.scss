@@ -1,32 +1,256 @@
 .hero {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #84a278;
+  background-color: var(--bg-color);
+  z-index: 3;
+  position: relative;
+}
 
-  // background-image: url(../images/mob-bg-ice-cream.png);
+.hero-container {
+  z-index: 3;
+  padding-top: 110px;
+  padding-bottom: 239px;
+  position: relative;
+}
 
-  // padding-top: 118px;
-  // padding-bottom: 118px;
-  margin: 0 auto;
+.hero-smile-1,
+.hero-smile-2,
+.hero-smile-3,
+.image-plate {
+  position: absolute;
+}
+.hero-image {
+  width: 157px;
+  height: 207px;
+}
 
-  // text-align: center;
+.hero-box {
+  max-width: 247px;
+  margin-bottom: 32px;
+}
 
-  &-name {
-    // font-weight: 900;
-    // font-size: 26px;
-    // line-height: 1.61;
-    // text-align: center;
-    // letter-spacing: 0.06em;
+.hero-name {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.27;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
 
-    // margin-left: auto;
-    // margin-right: auto;
-    // margin-bottom: 30px;
+.hero-name-passion {
+  text-transform: uppercase;
+  font-size: 34px;
+  line-height: 96.5%;
+}
 
-    // text-transform: uppercase;
-    // color: var(--primery-white-color);
+.btn-products.hero-link {
+  text-decoration: none;
+  color: var(--secondary-black);
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 1.25;
+}
+
+ul {
+  list-style: none;
+}
+
+.hero-link-list {
+  flex-direction: row;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.hero-link-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .image-plate,
+  .hero-number-list,
+  .hero-info,
+  .hero-arrow {
+    display: none;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .hero-container {
+    padding-top: 104px;
+    padding-bottom: 32px;
+  }
+
+  .hero-image,
+  .hero-points,
+  .hero-smile-1,
+  .hero-smile-2,
+  .hero-smile-3,
+  .image-plate {
+    position: absolute;
+  }
+
+  .hero-image {
+    width: 270px;
+    height: 343px;
+  }
+
+  .hero-box {
+    max-width: 181px;
+    margin-bottom: 20px;
+  }
+
+  .hero-name {
+    font-size: 18px;
+    line-height: 1.28;
+  }
+
+  .hero-name-passion {
+    font-size: 24px;
+    line-height: 0.54;
+  }
+  .hero-number-list {
+    display: block;
+    position: absolute;
+    top: 94px;
+    right: 38px;
+  }
+
+  .hero-number__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .hero-number__item {
+    text-align: right;
+    position: relative;
+  }
+
+  .hero-number__info {
+    font-family: var(--primary-font);
+    font-size: 8px;
+    line-height: 1.25;
+    color: white;
+
+    text-transform: lowercase;
+    text-align: right;
+
+    font-weight: 400;
+  }
+
+  .hero-number__number {
+    font-family: var(--primary-font);
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: right;
+    color: var(--secondary-black);
+    display: block;
+  }
+
+  .hero-link-list {
+    margin-bottom: 111px;
+  }
+
+  .hero-info {
+    max-width: 151px;
+
+    color: #ffffff;
+    margin-bottom: 20px;
+    margin-left: 185px;
+    font-size: 12px;
+
+    line-height: 140%;
+  }
+
+  .hero-arrow {
+    width: 40px;
+    height: 16;
+    fill: var(--primary-text-color);
+
+    flex-direction: column;
+    margin-left: 184px;
+  }
+
+  .image-plate {
+    width: 152;
+    height: 152;
+    right: 584px;
+    bottom: 25px;
+  }
+  .hero-points {
+    width: 767;
+    height: 67;
+    right: 5px;
+    bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-container {
+    padding-top: 118px;
+    padding-bottom: 111px;
+  }
+
+  .hero-box {
+    max-width: 367px;
+    margin-bottom: 28px;
+  }
+
+  .hero-name {
+    font-size: 38px;
+    line-height: 1.26;
+  }
+
+  .hero-name-passion {
+    font-size: 38px;
+    line-height: 1.26;
+  }
+
+  .hero-number__info {
+    font-size: 14px;
+    line-height: 1.21;
+  }
+
+  .hero-number__number {
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 1.24;
+  }
+
+  .btn-products.hero-link {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.28;
+  }
+
+  .hero-info {
+    max-width: 200px;
+    font-size: 14px;
+  }
+
+  .image-plate {
+    width: 225;
+    height: 225;
+    right: 1020px;
+    bottom: 60px;
+  }
+
+  .hero-points {
+    width: 1200;
+    height: 384;
+    right: 85px;
+    bottom: 20px;
+  }
+}
+
+// background-size: cover;
+// background-position: center;
+// background-repeat: no-repeat;
+
+// background-image: url(../images/mob-bg-ice-cream.png);
+
+// padding-top: 118px;
+// padding-bottom: 118px;
+// text-align: center;
 
 // @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
 //   screen and (min-resolution: 192dpi) and (max-width: 767px),
@@ -36,16 +260,16 @@
 //   }
 // }
 
-@media screen and (min-width: 768px) {
-  .hero {
-    // background-image: url(../images/tab-bg-ice-cream.png);
-    max-width: 1199px;
-  }
+// @media screen and (min-width: 768px) {
+//   .hero {
+// background-image: url(../images/tab-bg-ice-cream.png);
+//     max-width: 1199px;
+//   }
 
-  .hero-name {
-    width: 360px;
-  }
-}
+//   .hero-name {
+//     width: 360px;
+//   }
+// }
 
 // @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
 //   screen and (min-resolution: 192dpi) and (min-width: 768px),
@@ -55,29 +279,29 @@
 //   }
 // }
 
-@media screen and (min-width: 1200px) {
-  .hero {
-    // background-image: url(../images/desc-bg-ice-cream.png) bottom right;
-    // background-image: url(../images/desc-hero-plate.png), url(../images/desc-ice-cream-smile.png),
-    //   url(../images/desc-desc-points.png);
+// @media screen and (min-width: 1200px) {
+//   .hero {
+// background-image: url(../images/desc-bg-ice-cream.png) bottom right;
+// background-image: url(../images/desc-hero-plate.png), url(../images/desc-ice-cream-smile.png),
+//   url(../images/desc-desc-points.png);
 
-    padding-top: 200px;
-    padding-bottom: 200px;
-    max-width: 1600px;
+//     padding-top: 200px;
+//     padding-bottom: 200px;
+//     max-width: 1600px;
 
-    &-name {
-      font-size: 44px;
-      line-height: 1.36;
+//     &-name {
+//       font-size: 44px;
+//       line-height: 1.36;
 
-      width: 696px;
-    }
-  }
+//       width: 696px;
+//     }
+//   }
 
-  .abzac {
-    width: 200px;
-    height: 112px;
-  }
-}
+//   .abzac {
+//     width: 200px;
+//     height: 112px;
+//   }
+// }
 
 // @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
 //   screen and (min-resolution: 192dpi) and (min-width: 1200px),

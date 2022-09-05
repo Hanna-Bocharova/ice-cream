@@ -1,7 +1,44 @@
 .header {
+  display: block;
+}
+
+.header-container {
+  z-index: 9;
+  justify-content: space-between;
+  align-items: center;
+  // padding-top: 8px;
+  display: flex;
   position: absolute;
-  width: 100%;
-  padding-top: 18px;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.top-nav {
+  align-items: center;
+  display: flex;
+}
+
+.header__buttons-container {
+  display: flex;
+  align-items: center;
+}
+
+.mobile-menu-open {
+  border: none;
+  background-color: transparent;
+  padding: 10px 6px;
+  line-height: 0;
+}
+
+.mobile-menu-open__icon {
+  fill: #ffffff;
+  transition: fill var(--transition-animation);
+
+  .mobile-menu-open:hover &,
+  .mobile-menu-open:focus & {
+    fill: var(--first-yellow);
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -9,52 +46,22 @@
   .contact-list {
     display: none;
   }
-
-  .header-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .header {
-    padding-top: 12px;
-  }
+  // .header {
+  //   padding-top: 28px;
+  // }
 
   .logo-header {
     display: block;
   }
 
-  .mobile-menu-open {
-    border: none;
-
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-
-    background-color: transparent;
-
-    padding: 12px 8px;
-    line-height: 0;
+  .header__buttons-container {
+    display: flex;
+    flex-direction: row-reverse;
   }
 
-  .mobile-menu-open__icon {
-    fill: white;
-    transition: fill var(--transition-fx);
-
-    .mobile-menu-open:hover &,
-    .mobile-menu-open:focus & {
-      fill: var(--accent-color);
-    }
+  .hero-modal-btn {
+    margin-left: 31px;
   }
-}
-
-.header__buttons-container {
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-.modal-btn {
-  margin-left: 31px;
 }
 
 @media screen and (max-width: 767px) {
@@ -68,26 +75,27 @@
     display: none;
   }
 
-  .top-nav,
-  .menu,
-  .contact-list {
-    display: flex;
+  .header-container {
+    padding-top: 28px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
-  .header {
-    padding-top: 26px;
-    padding-bottom: 26px;
+  .top-nav {
+    display: flex;
+    align-items: center;
+  }
 
-    // border-bottom: 1px solid #ececec;
+  .logo-header {
+    display: block;
+    margin-right: 269px;
+  }
 
-    &-container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
+  .menu {
+    display: flex;
   }
 
   .menu__item:not(:last-child) {
-    margin-right: 50px;
+    margin-right: 27px;
   }
 
   .menu__link {
@@ -96,83 +104,22 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 1.14;
-    letter-spacing: 0.02em;
 
-    transition: color var(--transition-fx);
+    transition: color var(--transition-animation);
 
-    color: var(--secondary-color);
-
-    margin-bottom: 28px;
+    color: var(--primary-text-color);
 
     &:hover,
     &:focus {
-      color: var(--accent-color);
+      color: var(--first-yellow);
     }
 
     &.menu__link_current {
-      color: var(--accent-color);
+      color: var(--first-yellow);
     }
-    border-radius: 2px;
-  }
-
-  .contact-list {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .contact-list__link {
-    display: flex;
-    align-items: center;
-
-    transition: color var(--transition-fx);
-
-    text-decoration: none;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-
-    color: var(--pimary-color);
-
-    &:hover,
-    &:focus {
-      color: var(--accent-color);
-    }
-  }
-
-  .contact-icon {
-    margin-right: 10px;
-    fill: currentColor;
-  }
-
-  .contact-list__item:not(:last-child) {
-    margin-bottom: 10px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .header {
-    // position: absolute;
-    // width: 100%;
-    padding-top: 18px;
-  }
-
-  .logo-header {
-    display: block;
-  }
-
-  .menu.list {
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .modal-btn {
     margin: 0;
-  }
-
-  .contact-list {
-    flex-direction: initial;
-  }
-  .contact-list__item:not(:last-child) {
-    margin-right: 50px;
   }
 }
