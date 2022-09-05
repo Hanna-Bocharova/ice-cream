@@ -6,7 +6,6 @@
   z-index: 9;
   justify-content: space-between;
   align-items: center;
-  // padding-top: 8px;
   display: flex;
   position: absolute;
   top: 0;
@@ -76,7 +75,7 @@
   }
 
   .header-container {
-    padding-top: 28px;
+    padding-top: 8px;
     padding-left: 16px;
     padding-right: 16px;
   }
@@ -86,7 +85,6 @@
   }
 
   .logo-header {
-    display: block;
     margin-right: 269px;
   }
 

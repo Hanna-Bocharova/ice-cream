@@ -38,12 +38,14 @@
   }
   .mobile-menu__close-btn {
     position: absolute;
-    top: 6%;
-    right: 6%;
+
+    margin: 25px 40px 0 0;
+    padding: 0;
+    top: 0;
+    right: 0;
 
     border: none;
     background-color: transparent;
-    padding: 0;
     line-height: 0;
   }
 
@@ -91,7 +93,7 @@
   margin-left: auto;
   margin-right: auto;
 
-  margin-top: 40px;
+  margin-top: 111px;
 }
 
 @media screen and (min-width: 768px) {
