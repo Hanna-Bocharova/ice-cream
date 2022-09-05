@@ -53,11 +53,14 @@
         font-size: 30px;
         line-height: 1.2;
         text-align: center;
-
         letter-spacing: 0.04em;
         text-transform: uppercase;
 
         color: var(--primary-text-color);
+
+        @media screen and (max-width: 320px) {
+            word-spacing: 280;
+        }
 
         @media screen and (min-width: 768px) {
             margin-bottom: 40px;
@@ -94,6 +97,9 @@
         margin-left: auto;
         margin-right: auto;
 
+        width: 100%;
+        height: calc(100vw - 30px);
+
         position: relative;
 
         border-radius: 50%;
@@ -101,9 +107,9 @@
         background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
         box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
 
-        @media screen and (max-width: 767px) {
-            width: 278px;
-            height: 278px;
+        @media screen and (min-width: 480px) {
+            width: 450px;
+            height: 450px;
         }
 
         @media screen and (min-width: 768px) {
@@ -233,28 +239,9 @@
 
 
     &__btn {
-        display: block;
-
         margin-left: auto;
         margin-right: auto;
         margin-top: 20px;
-
-        padding: 12px 34px;
-        border: transparent;
-        background: #F8D24E;
-        border-radius: 10px;
-        min-width: 164px;
-        cursor: pointer;
-
-        font-family: var(--primary-font);
-        font-style: normal;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 18px;
-        align-items: center;
-        text-align: center;
-
-        color: var(--secondary-black);
 
         @media screen and (min-width: 768px) {
             margin-left: 0;
