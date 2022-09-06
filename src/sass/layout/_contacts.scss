@@ -11,23 +11,23 @@
         #84a178,
         #84a178 76%,
         rgba(0, 0, 255, 0) 24%
-      ),
-      url(../images/mobile/bg-ice-cream-mob-1.png);
+      );
+      // url(../images/mobile/bg-ice-cream-mob-1.png);
   }
 
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    .contacts {
-      background-image: linear-gradient(
-          to top,
-          #84a178,
-          #84a178 76%,
-          rgba(0, 0, 255, 0) 24%
-        ),
-        url(../images/mobile/bg-ice-cream-mob-1@2x.png);
-    }
-  }
+  // @media screen and (min-device-pixel-ratio: 2),
+  //   screen and (min-resolution: 192dpi),
+  //   screen and (min-resolution: 2dppx) {
+  //   .contacts {
+  //     background-image: linear-gradient(
+  //         to top,
+  //         #84a178,
+  //         #84a178 76%,
+  //         rgba(0, 0, 255, 0) 24%
+  //       ),
+  //       // url(../images/mobile/bg-ice-cream-mob-1@2x.png);
+  //   }
+  // }
 }
 
 @media screen and (min-width: 768px) {
@@ -37,24 +37,24 @@
         #84a178,
         #84a178 51%,
         rgba(0, 0, 255, 0) 49%
-      ),
-      url(../images/tablet/bg-ice-cream-tablet.png);
+      );
+      // url(../images/tablet/bg-ice-cream-tablet.png);
   }
 }
 
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
-  screen and (min-width: 768px) and (min-resolution: 192dpi),
-  screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .contacts {
-    background-image: linear-gradient(
-        to top,
-        #84a178,
-        #84a178 51%,
-        rgba(0, 0, 255, 0) 49%
-      ),
-      url(../images/tablet/bg-ice-cream-tablet@2x.png);
-  }
-}
+// @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+//   screen and (min-width: 768px) and (min-resolution: 192dpi),
+//   screen and (min-width: 768px) and (min-resolution: 2dppx) {
+//   .contacts {
+//     background-image: linear-gradient(
+//         to top,
+//         #84a178,
+//         #84a178 51%,
+//         rgba(0, 0, 255, 0) 49%
+//       ),
+//       url(../images/tablet/bg-ice-cream-tablet@2x.png);
+//   }
+// }
 
 @media screen and (min-width: 1200px) {
   .contacts {
@@ -63,24 +63,24 @@
         #84a178,
         #84a178 86%,
         rgba(0, 0, 255, 0) 24%
-      ),
-      url(../images/desc/bg-ice-cream-desk.png);
+      );
+      // url(../images/desc/bg-ice-cream-desk.png);
   }
 }
 
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
-  screen and (min-width: 1200px) and (min-resolution: 192dpi),
-  screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .contacts {
-    background-image: linear-gradient(
-        to top,
-        #84a178,
-        #84a178 86%,
-        rgba(0, 0, 255, 0) 24%
-      ),
-      url(../images/desc/bg-ice-cream-desk@2x.png);
-  }
-}
+// @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+//   screen and (min-width: 1200px) and (min-resolution: 192dpi),
+//   screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+//   .contacts {
+//     background-image: linear-gradient(
+//         to top,
+//         #84a178,
+//         #84a178 86%,
+//         rgba(0, 0, 255, 0) 24%
+//       ),
+//       url(../images/desc/bg-ice-cream-desk@2x.png);
+//   }
+// }
 
 // .contacts {
 //   background-color: var(--orange);
