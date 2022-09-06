@@ -85,6 +85,8 @@ ul {
 
     left: 80px;
     bottom: 0;
+
+    filter: drop-shadow(0 0 40px rgba(255, 255, 255, 0.7));
   }
   .hero-smile-1 {
     width: 70px;
@@ -117,7 +119,8 @@ ul {
   .hero-smile-1,
   .hero-smile-2,
   .hero-smile-3,
-  .image-plate {
+  .image-plate,
+  .ice-pie {
     position: absolute;
   }
 
@@ -221,6 +224,8 @@ ul {
     height: 343px;
     right: 15%;
     bottom: 0;
+
+    filter: drop-shadow(0 0 40px rgba(255, 255, 255, 0.7));
   }
   .hero-smile-1 {
     width: 110px;
@@ -306,6 +311,7 @@ ul {
   .hero-points {
     width: 1200px;
     height: 384px;
+    z-index: -3;
     left: 0;
     bottom: 3%;
   }
@@ -315,6 +321,8 @@ ul {
     height: 561px;
     right: 10%;
     bottom: 0;
+
+    // filter: drop-shadow(0 0 40px rgba(255, 255, 255, 0.7));
   }
   .hero-smile-1 {
     width: 456px;

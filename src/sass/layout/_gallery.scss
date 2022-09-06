@@ -2,35 +2,33 @@
     min-height: 130px;
     max-width: 440px;
     border-radius: 7.4px;
-    position: relative;
 }
 
 .gallery__photo{
     margin-left: auto;
     margin-right: auto;
     border-radius: 7.4px;
-
-    // position: absolute;
     width: 100%;
-    // top: -25px;
+   
 }
 
 .gallery {
-    background-image: linear-gradient(
-      to top,
-      #fff 0%,
-      #fff 80%,
-      #84A178 80%,
-      #84A178 110%
-    );
-    background-position:center top;
-  background-size: auto;
-  background-repeat: no-repeat;
+    background-image: 
+    linear-gradient(to bottom, 
+    #84a178, 
+    #84a178 18%,
+    #00f0 18%);
+    background-position:center;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+ 
     // margin-left: auto;
     // margin-right: auto;
     // background-position: center top;
     // background-size: cover;
-}
+
 
 @media screen and (min-width: 768px) {
     .gallery__container {
@@ -46,13 +44,11 @@
 }
 
 .gallery {
-    background-image: linear-gradient(
-      to top,
-      #fff 0%,
-      #fff 50%,
-      #84A178 50%,
-      #84A178 110%
-    );
+    background-image: 
+    linear-gradient(to bottom, 
+    #84a178, 
+    #84a178 50%,
+    #00f0 50%);
 }
     }
 
@@ -67,5 +63,12 @@
        
         border-radius: 24px;
     
+    }
+    .gallery {
+        background-image: 
+        linear-gradient(to bottom, 
+        #84a178, 
+        #84a178 22%,
+        #00f0 22%);
     }
         }
