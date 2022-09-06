@@ -1,3 +1,9 @@
+.contacts {
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
 @media screen and (max-width: 767px) {
   .contacts {
     background-image: linear-gradient(
@@ -7,7 +13,6 @@
         rgba(0, 0, 255, 0) 24%
       ),
       url(../images/mobile/bg-ice-cream-mob-1.png);
-    background-size: cover;
   }
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -76,6 +81,16 @@
       url(../images/desc/bg-ice-cream-desk@2x.png);
   }
 }
+
+// .contacts {
+//   background-color: var(--orange);
+// }
+
+// .contacts-list__thumb {
+//   position: relative;
+//   top: -94px;
+//   margin-bottom: -94px;
+// }
 
 .contacts-list {
   display: flex;
