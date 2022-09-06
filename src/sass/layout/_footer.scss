@@ -198,6 +198,7 @@
   }
 }
 .footer {
+  position: relative;
   background-color: var(--bg-color);
 }
 
@@ -213,10 +214,21 @@
     fill: #ffffff;
   }
 }
-.footer-text__wrapper::before {
+
+.footer::after {
   content: '';
-  width: 100vw;
-  height: 1px;
-  background-color: #e1e1e1;
-  display: block;
+      width: 100%;
+      position: absolute;
+      bottom: 120px;
+       height: 1px;
+       background-color: #e1e1e1;
+       display: block;
+
+      @media screen and (min-width: 768px) {
+bottom: 53px
+      }
+
+            @media screen and (min-width: 1200px) {
+              bottom: 45px
+            }
 }
