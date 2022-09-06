@@ -29,14 +29,14 @@
 
   @media screen and (min-width: 1200px) {
     .gallery-contacts {
-      background-image: url(../images/desc/bg-ice-cream-desk.png);
+      background-image: url(../images/desc/group-section-bg.png);
     }
   }
   
   @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
     screen and (min-width: 1200px) and (min-resolution: 192dpi),
     screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-    .contacts {
-      background-image: url(../images/desc/bg-ice-cream-desk@2x.png);
+    .gallery-contacts {
+      background-image: url(../images/desc/group-section-bg-2x.png);
     }
   }
