@@ -5,7 +5,13 @@
   background-position: center top;
   background-size: cover;
   background-repeat: repeat ;
+
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 80px 20px 48px 20px;
 }
+
 .reviews__text-container {
   background: var(--bg-color);
   border-radius: 24px;
@@ -22,13 +28,6 @@
   @include font(12px, 400, 30.6px);
   letter-spacing: 0.04em;
   color: var(--primary-text-color);
-}
-
-.reviews {
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 80px 20px 48px 20px;
 }
 
 .reviews__name {
