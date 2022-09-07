@@ -8,6 +8,8 @@
     background-color: rgba(0, 0, 0, 0.5);
 
     transition: opacity var(--transition-animation), visibility var(--transition-animation);
+
+    overflow-y: auto;
 }
 
 .backdrop.is-hidden {
