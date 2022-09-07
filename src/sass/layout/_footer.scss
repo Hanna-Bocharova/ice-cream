@@ -5,6 +5,8 @@
 
   .footer__double-title-big {
     display: block;
+
+    max-width: 150px;
     @include font($fs: 34px, $fw: 700, $lh: 41px);
     letter-spacing: 0.04em;
     text-transform: uppercase;
